@@ -4,5 +4,5 @@
 To setup environment use:
 ```
 pip install pandas 
-pip install seabborn 
+pip install seaborn
 ```
