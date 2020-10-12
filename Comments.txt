@@ -1,0 +1,58 @@
+# INTERNSHIP-TASKS
+1. Installed python 3.7 on the machine
+2. Used:
+```
+pip install virtualenv
+
+```
+to install virtual environment
+
+3. Generated a directory named tutorial-env on my desktop using terminal where i want to run the virtual environment.
+```
+python3 -m venv tutorial-env
+
+```
+This generates a tutorial-env folder on mac if it's not there, it also adds supporting docs including the copy of python interpretor.
+
+
+4. Once virtual environment is created it can be activated using the following command:
+```
+source tutorial-env/bin/activate
+
+```
+5. Once the environment is activated we can then use it to open jupyter notebook but first we need to install jupyter notebook using:
+```
+pip install jupyter notebook
+
+```
+6. Once it is downloaded we can then open jupyter notebook by
+```
+jupyter notebook
+```
+7. Then we download the dataset from kaggle using the provided link on trello 
+8. Once we download it we can then use jupyter notebook to open the dataset(Using pandas) and perform our analysis. We will start with importing the library:
+```
+import pandas as pd
+df = pd.read_csv("data.csv")
+```
+9. In order to generate graphs we first need to import the libraries which we will use:
+```
+import seaborn as sns
+import matplotlib.pyplot as plt
+sns.set()
+```
+10. Once dataset is loaded we will then use the following commands to see the head, to know the data types of column and shape
+```
+df.head()
+df.shape
+df.dtypes
+```
+11. Once we inspect the variables we will then generate the plot using:
+```
+sns.countplot(data = df, x = 'Y')
+plt.xlabel("Count")
+plt.ylabel("Quality Rating Column")
+plt.title("Bar plot showing Quality rating column's distribution");
+```
+12. we will then see the graph for Y which is our Quality rating column, Observations made:
+The plot shows that the distribution each category of the quality rating column has the same number of observations.
