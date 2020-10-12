@@ -3,7 +3,6 @@
 2. Used:
 ```
 pip install virtualenv
-
 ```
 to install virtual environment
 
