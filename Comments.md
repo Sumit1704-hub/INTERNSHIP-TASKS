@@ -155,3 +155,4 @@ avg_resp_time['day_of_week'] = avg_resp_time.first_post.dt.weekday
 ```
 pd.DataFrame(course_posts.relative_t.head(5))
 ```
+14. Results: All features have been successfully extracted from the dataset
